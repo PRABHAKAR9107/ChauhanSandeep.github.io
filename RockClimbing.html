@@ -14,124 +14,113 @@
  
   </head>
 <body>
-  <nav>
-    <div class="nav-wrapper cyan darken-4">
-      <a href="#!" class="brand-logo center"><i class="material-icons">cloud</i>Rock Climbing</a>
- 
+  <!--Navigation Bar-->
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Rishikesh</a></li>
+  <li><a href="#!">Nainital</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Bapatla(Coming Soon)</a></li>
+</ul>
+    <!--END of Dropdown Structure -->
+    
+    <div class="navbar-fixed ">
+
+<nav>
+  <div class="nav-wrapper teal">
+    <a href="#!" class="brand-logo left">Logo</a>
+<!--           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+
+    <ul class="right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">FAQs</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Destinations<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    
+<!--     <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul> -->
+  </div>
+</nav>
     </div>
-  </nav>
+    <!--END of Navigation Bar-->
+<!--Swipeable tabs-->
+<div id="swipeable" class="section scrollspy">
+    <ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s3" ><a class="active" href="#description_rockClimbing">Overview</a></li>
+    <li class="tab col s3"><a href="#form_rockClimbing">Form</a></li>
+    <li class="tab col s3"><a href="#payment_rockClimbing">Payment</a></li>
+    </ul>
+</div>
+
+<!--End of swipeable tabs-->
+
+  <!--Description-->
+  <div id="description_rockClimbing" class="col s12">
+  <h5>Overview</h5>
+  <ul class="collection">
+      <li class="collection-item">WELCOME DRINK </li>
+      <li class="collection-item">LOCAL CAMP ACTIVITY  </li>
+      <li class="collection-item">1 MEAL (VEG/NON VEG)</li>
+      <li class="collection-item">1 rockClimbing 16 KM </li>
+      <li class="collection-item">TREKKING TO WATER FALL </li>
+      <li class="collection-item">BODY SURFING </li>
+      <li class="collection-item">CLIFF JUMPING </li>
+    </ul>
+  </div>
+
+<!--End of Description-->
+
+<!--Form-->
+  <div id="form_rockClimbing" class="col s12">
+  <h5>Please enter your details below</h5>
   <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3"><a href="#test5">Overview</a></li>
-        <li class="tab col s3 "><a href="#test6">Registration</a></li>
-      </ul>
-    </div>
-    <div id="test5" class="col s12">
-        <div class="row">
-        <div class="col s12 m6">
-          <div class="card  purple darken-4">
-            <div class="card-content white-text">
-              <span class="card-title">#Travel</span>
-     <p>Rig Veda, the most ancient of the scriptures says, ‘there is no happiness for him who does not travel. The fortune of him who is sitting sits, it rises when he rises, it sleeps when he sleeps, it moves when he moves.
-Therefore, Wander!’</p>
-            </div>
-            </div>
-        </div>
-      </div>
-
-      <h3 class="left-align">Package Details</h3>
-      <table class="bordered highlight responsive-table">
-        <thead>
-          <tr>
-              <th data-field="id">Adventure</th>
-              <th data-field="name">Price</th>
-              <th data-field="price">Days</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Rafting</td>
-            <td>800</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Rafting+Bungee Jumping+Rock Climbing</td>
-            <td>2400</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Rafting+Bungee Jumping</td>
-            <td>1600</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Rafting+Rock Climbing</td>
-            <td>1500</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="test6" class="col s12"> 
-    	 <div class="row">
- <form action="#">
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test1" />
-      <label for="test1">Rafting</label>
-    </p>
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test2" />
-      <label for="test2">Rafting+Bungee Jumping+Rock Climbing</label>
-    </p>
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test3"  />
-      <label for="test3">Rafting+Bungee Jumping</label>
-    </p>
-      <p>
-        <input class="with-gap" name="group1" type="radio" id="test4" />
-        <label for="test4">Rafting+Rock Climbing</label>
-    </p>
-  </form>
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
         </div>
-      </div>
-      </div>
-        <div class="input-field col s6">
-  		<select class="browser-default">
-   		 <option value="" disabled selected>Select Members</option>
-    		<option value="1">1</option>
-    		<option value="2">2</option>
-   			<option value="3">3</option>
-   			<option value="4">more</option>
-  </select>
-  </div>
-      <div class="row">
         <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
           <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+          <label for="email" data-error="wrong" data-success="right">Email</label>
         </div>
+
+         <div class="input-field col s6 m6 l6">
+               <label for="test">Number of people</label><br>
+               <p class="range-field">
+                  <input type="range" id="test" min="0" max="30" />
+               </p>
+            </div>
+
+        <div class="input-field col s6 m6 l6"> 
+        <label for="date">Pick Schedule date</label> <br>          
+          <input id="date" type="date" class="datepicker">    
+        </div> 
+
+        <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button> 
       </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
     </form>
   </div>
- 
-  </button>
-    </div>
   </div>
- 
-   <!--End of Contact Form-->
-      
+<!--End of Form->
+<!--Payment-->
+  <div id="payment_rockClimbing" class="col s12 green">Payment</div>
+<!--End of Payment-->
+
       <!--Footer-->
        <footer class="page-footer teal">
     <div class="container">
